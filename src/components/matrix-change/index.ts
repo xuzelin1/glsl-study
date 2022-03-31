@@ -1,6 +1,6 @@
 import { createProgram, createShader } from "./program-creator";
-import('../../utils/webgl-utils');
-import('../../utils/webgl-lessons-ui');
+// import('../../utils/webgl-utils');
+// import('../../utils/webgl-lessons-ui');
 
 const vertexShaderSource = `#version 300 es
  

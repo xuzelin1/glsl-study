@@ -31,6 +31,8 @@
 
 /* global define */
 export default (function(root, factory) {  // eslint-disable-line
+  console.log(12345678);
+
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define([], function() {
@@ -47,15 +49,15 @@ export default (function(root, factory) {  // eslint-disable-line
 
   /** @module webgl-utils */
 
-  function isInIFrame(w) {
-    w = w || topWindow;
-    return w !== w.top;
-  }
+  // function isInIFrame(w) {
+  //   w = w || topWindow;
+  //   return w !== w.top;
+  // }
 
-  if (!isInIFrame()) {
-    console.log("%c%s", 'color:blue;font-weight:bold;', 'for more about webgl-utils.js see:');  // eslint-disable-line
-    console.log("%c%s", 'color:blue;font-weight:bold;', 'http://webgl2fundamentals.org/webgl/lessons/webgl-boilerplate.html');  // eslint-disable-line
-  }
+  // if (!isInIFrame()) {
+  //   console.log("%c%s", 'color:blue;font-weight:bold;', 'for more about webgl-utils.js see:');  // eslint-disable-line
+  //   console.log("%c%s", 'color:blue;font-weight:bold;', 'http://webgl2fundamentals.org/webgl/lessons/webgl-boilerplate.html');  // eslint-disable-line
+  // }
 
   /**
    * Wrapped logging function.
