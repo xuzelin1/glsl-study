@@ -28,9 +28,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+  @import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css");
   #matrix-canvas {
-    width: calc(100vw - 100px);
-    height: calc(100vh - 100px);
+    width: 100vw;
+    height: 100vh;
     border: 2px solid #000;
     margin: auto;
   }
